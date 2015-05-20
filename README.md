@@ -10,7 +10,7 @@ $ lsgaiatest --help
 usage: lsgaiatest [-h] [--type TYPE] [--tag TAG] [--run-list]
                   [--no-unfound-tests] [--no-run-tests] [--no-skipped-tests]
                   [--no-skip-reason] [--full-path] [--device DEVICE]
-                  [--app_name APP_NAME]
+                  [--app-name APP_NAME]
                   test_file_or_dir [test_file_or_dir ...]
 
 List what tests gaiatest would run for a given set of options.
@@ -37,8 +37,7 @@ Query:
 Reports:
   --run-list           Omit any headers or extra output and only output a json
                        list of tests that would be run. This will override any
-                       other reporting options except --full-path.
-                       (default=False)
+                       other reporting options. (default=False)
   --no-unfound-tests   Suppress the report about unfound tests (default=False)
   --no-run-tests       Suppress the report about tests that would be run
                        (default=False)
@@ -50,7 +49,7 @@ Reports:
 Capabilities:
   --device DEVICE      Device the test runner would detect, such as "flame" or
                        "desktop" (default=flame)
-  --app_name APP_NAME  Application name the test runner would detect, such as
-                       "B2G" or "Firefox"(default=B2G)
+  --app-name APP_NAME  Application name the test runner would detect, such as
+                       "B2G" or "Firefox" (default=B2G)
 ```
 
