@@ -2,6 +2,7 @@
 List what tests gaiatest would run for a given set of options.
 
 Install with:
+
     python setup.py install
 
 ```
