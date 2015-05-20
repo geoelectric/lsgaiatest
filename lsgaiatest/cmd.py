@@ -100,7 +100,7 @@ def main():
                         action='store_true',
                         default=False,
                         help=('Omit any headers or extra output and only output a json list of tests that would be '
-                              'run. This will override any other reporting options except --full-path. '
+                              'run. This will override any other reporting options. '
                               '(default=%(default)s)'))
     arggrp.add_argument('--no-unfound-tests',
                         action='store_true',
@@ -127,9 +127,9 @@ def main():
     arggrp.add_argument('--device',
                         default='flame',
                         help='Device the test runner would detect, such as "flame" or "desktop" (default=%(default)s)')
-    arggrp.add_argument('--app_name',
+    arggrp.add_argument('--app-name',
                         default='B2G',
-                        help=('Application name the test runner would detect, such as "B2G" or "Firefox"'
+                        help=('Application name the test runner would detect, such as "B2G" or "Firefox" '
                               '(default=%(default)s)'))
 
     args = parser.parse_args()
