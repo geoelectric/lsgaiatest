@@ -6,9 +6,10 @@ Install with:
 
 ```
 $ lsgaiatest --help
-usage: lsgaiatest [-h] [--type TYPE] [--tag TAG] [--no-unfound-tests]
-                  [--no-run-tests] [--no-skipped-tests] [--no-skip-reason]
-                  [--full-path] [--device DEVICE] [--app_name APP_NAME]
+usage: lsgaiatest [-h] [--type TYPE] [--tag TAG] [--run-list]
+                  [--no-unfound-tests] [--no-run-tests] [--no-skipped-tests]
+                  [--no-skip-reason] [--full-path] [--device DEVICE]
+                  [--app_name APP_NAME]
                   test_file_or_dir [test_file_or_dir ...]
 
 List what tests marionette would run for a given set of options.
@@ -33,6 +34,10 @@ Query:
                        contain at least one of the given tags.
 
 Reports:
+  --run-list           Omit any headers or extra output and only output a json
+                       list of tests that would be run. This will override any
+                       other reporting options except --full-path.
+                       (default=False)
   --no-unfound-tests   Suppress the report about unfound tests (default=False)
   --no-run-tests       Suppress the report about tests that would be run
                        (default=False)
