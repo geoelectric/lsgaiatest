@@ -40,7 +40,7 @@ def print_report(runner, unfound_tests, args):
     if runner.tests and not args.no_run_tests:
         print_header('Would be run (%d)' % len(runner.tests))
         for run_test in runner.tests:
-            suffix = 'fail' if run_test['expected'] == 'fail' else ''
+            suffix = '(XFAIL)' if run_test['expected'] == 'fail' else ''
             print '  ', format_path(run_test['filepath'], args), suffix
         print
 
