@@ -12,7 +12,7 @@ usage: lsgaiatest [-h] [--type TYPE] [--tag TAG] [--run-list]
                   [--app_name APP_NAME]
                   test_file_or_dir [test_file_or_dir ...]
 
-List what tests marionette would run for a given set of options.
+List what tests gaiatest would run for a given set of options.
 
 positional arguments:
   test_file_or_dir     A test script, directory, or manifest
